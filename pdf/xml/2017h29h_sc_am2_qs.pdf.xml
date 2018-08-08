@@ -1,0 +1,200 @@
+
+
+<question num='1'> 問1AESの特徴はどれか。 
+<selection option='ア'> 鍵長によって,段数が決まる。 </selection>
+<selection option='イ'> 段数は,6段以内の範囲で選択できる。 </selection>
+<selection option='ウ'> データの暗号化,復号,暗号化の順に3回繰り返す。 </selection>
+<selection option='エ'> 同一の公開鍵を用いて暗号化を3回繰り返す。 </selection>
+
+</question>
+
+<question num='2'> 問2SSL/TLSのダウングレード攻撃に該当するものはどれか。 
+<selection option='ア'> 暗号化通信中にクライアントPCからサーバに送信するデータを操作して,強制的にサーバのディジタル証明書を失効させる。 </selection>
+<selection option='イ'> 暗号化通信中にサーバからクライアントPCに送信するデータを操作して,クライアントPCのWebブラウザを古いバージョンのものにする。 </selection>
+<selection option='ウ'> 暗号化通信を確立するとき,弱い暗号スイートの使用を強制することによって,解読しやすい暗号化通信を行わせる。 </selection>
+<selection option='エ'> 暗号化通信を盗聴する攻撃者が,暗号鍵候補を総当たりで試すことによって解読する。 </selection>
+
+</question>
+
+<question num='3'> 問3サイドチャネル攻撃の説明はどれか。 
+<selection option='ア'> 暗号アルゴリズムを実装した攻撃対象の物理デバイスから得られる物理量(処理時間や消費電流など)やエラーメッセージから,攻撃対象の機密情報を得る。 </selection>
+<selection option='イ'> 企業などの機密情報を詐取するソーシャルエンジニアリングの手法のーつであり,不用意に捨てられた機密情報の印刷物をオフィスの紙ごみの中から探し出す。 </selection>
+<selection option='ウ'> 通信を行う2者間に割り込んで,両者が交換する情報を自分のものとすり替えることによって,気付かれることなく盗聴する。 </selection>
+<selection option='エ'> データベースを利用するWebサイトに入力パラメタとしてSQL文の断片を与えることによって,データベースを改ざんする。 </selection>
+
+</question>
+
+<question num='4'> 問4PCなどに内蔵されるセキュリティチップ(TPM : Tusted Platform Module)がもつ機能はどれか。 
+<selection option='ア'> TPM間での共通鍵の交換 </selection>
+<selection option='イ'> 鍵ペアの生成 </selection>
+<selection option='ウ'> ディジタル証明書の発行 </selection>
+<selection option='エ'> ネットワーク経由の也数送信 </selection>
+
+</question>
+
+<question num='5'> 問5セッションIDの固定化(Session Fixation)攻撃の手口はどれか。 
+<selection option='ア'> HTTPS通信でSecure属性がないCookieにセッションIDを格納するWebサイトにおいて,HTTP通信で送信されるセッションIDを悪意のある者が盗聴する。 </selection>
+<selection option='イ'> URLパラメタにセッションIDを格納するWebサイトにおいて,Refererによってリンク先のWebサイトに送信されるセッションIDが含まれたURLを,悪意のある者が盗用する。 </selection>
+<selection option='ウ'> 悪意のある者が正規のWebサイトから取得したセッションIDを,利用者のWebブプラウザに送り込み,利用者がそのセッションIDでログインして,セッションがログイン状態に変わった後,利用者になりすます。 </selection>
+<selection option='エ'> 推測が容易なせセッションIDを生成するWebサイトにおいて,悪意のある者がセッションIDを推測し,ログインを試みる。 </selection>
+
+</question>
+
+<question num='6'> 問6DNS水責め攻撃(ランダムサプブドメイン攻撃)の手口と目的に関する記述のうち,適切なものはどれか。 
+<selection option='ア'> ISPが管理するDNSキャッシュサーバに対して,送信元を攻撃対象のサーバのIPアドレスに詐称してランダムかつ大量に生成したサブドメイン名の問合せを送り,その応答が攻撃対象のサーバに送信されるようにする。 </selection>
+<selection option='イ'> オープンリゾルバとなっているDNSキャッシュサーバに対して,攻撃対象のドメインのサブドメイン名をランダムかつ大量に生成して問い合わせ,攻撃対象の権威DNSサーバを過負荷にさせる。 </selection>
+<selection option='ウ'> 攻撃対象のDNSサーバに対して,攻撃者が管理するドメインのサプブドメイン名をランダムかつ大量に生成してキャッシュさせ,正規のDNSリソースレコードを強制的に上書きする。 </selection>
+<selection option='エ'> 攻撃対象のWebサイトに対して,当該ドメインのサブドメイン名をランダムかつ大量に生成してアクセスし,非公開のWesbページの参照を試みる。 </selection>
+
+</question>
+
+<question num='7'> 問7FIPSPUB140-2の記述内容はどれか。 
+<selection option='ア'> 暗号モジュールのセキュリティ要求事項 </selection>
+<selection option='イ'> 情報セキュリティマネジメントシステムに関する認証基準 </selection>
+<selection option='ウ'> ディジタル証明書や証明書失効リストの技術仕様 </selection>
+<selection option='エ'> 無線LANセキュリティの技術仕様 </selection>
+
+</question>
+
+<question num='8'> 問8NISTの定義によるクラウドコンピューティングのサービスモデルにおいて,パブリッククラウドサービスの利用企業のシステム管理者が,仮想サーバのゲスト0Sに対するセキュリティパッチの管理と適用を実施可か実施不可かの組合せのうち,適切なものはどれか。 
+[img1]
+
+</question>
+
+<question num='9'> 問9個人情報の漏えいに関するリスク対応のうち,リスク回避に該当するものはどれか。 
+<selection option='ア'> 個人情報の重要性と対策費用を勘案し,あえて対策をとらない。 </selection>
+<selection option='イ'> 個人情報の保管場所に外部の者が侵入できないように,入退室をより厳重に管理する。 </selection>
+<selection option='ウ'> _個人情報を含む情報資産を外部のデータセンタに預託する。 </selection>
+<selection option='エ'> 収集済みの個人情報を消去し,新たな収集を禁止する。 </selection>
+
+</question>
+
+<question num='10'> 問10JVNなどの羅弱性対策ポータルサィトで採用されているCVE (CommonWulnerabilities and Exposures)識別子の説明はどれか。 
+<selection option='ア'> コンピュータで必要なセキュリティ設定項目を識別するための識別子である。 </selection>
+<selection option='イ'> 脆弱性が悪用されて改ざんされたWebサイトのスクリーンショットを識別するための識別子である。 </selection>
+<selection option='ウ'> 製品に含まれる脆弱性を識別するための識別子である。 </selection>
+<selection option='エ'> セキュリティ襄品を識別するための識別子である。 </selection>
+
+</question>
+
+<question num='11'> 問11インターネットバンキングの利用時に被害をもたらすMTITB (Man-in-the-Browser) 攻撃に有効な対策はどれか。 
+<selection option='ア'> インターネットバパンキングでの送金時にWebプブプラウザで利用者が入力した情報と,金融機関が受信した情報とに差異がないことを検証できるよう,トランザクション署名を利用する。 </selection>
+<selection option='イ'> インターネットバンキングでの送金時に接続するWebサイトの正当性を確認できるよう,EV SSLサーバ証明書を採用する。 </selection>
+<selection option='ウ'> インターネットバパンキングでのログイン認証において,一定時間ごとに自動的に新しいパスワードに変更されるワンタイムパスワードを用意する。 </selection>
+<selection option='エ'> インターネットバンキング利用時の通信をSSLではなくTLSを利用して暗号化する。 </selection>
+
+</question>
+
+<question num='12'> 問12Webアプリヶーションの膣弱性を悪用する攻撃手法のうち,Webページ上で入力した文字列がPerlのsystem関数やPHPのexec関数などに渡されることを利用し,不正にシェルスクリプトを実行させるものは,どれに分類されるか。 
+<selection option='ア'> HTTPヘッダインジェクション </selection>
+<selection option='イ'> 08コマンドインジェクション </selection>
+<selection option='ウ'> クロスサイトリクエストフォージェリ </selection>
+<selection option='エ'> セッションハイジャック </selection>
+
+</question>
+
+<question num='13'> 問13ウイルス対策ソフトでの,フォールスネガティブに該当するものはどれか。 
+<selection option='ア'> ウイルスに感染していないファイルを,ウイルスに感染していないと判断する。 </selection>
+<selection option='イ'> ウイルスに感染していないファイルを,ウイルスに感染していると判断する。 </selection>
+<selection option='ウ'> ウイルスに感染しているファイルを,ウイルスに感染していないと判断する。 </selection>
+<selection option='エ'> ウイルスに感染しているファイルを,ウイルスに感染していると判断する。 </selection>
+
+</question>
+
+<question num='14'> 問14特定の利用者が所有するリソースが,WebサービスA上にある。OAuth2.0において,その利用者の認可の下,WebサービスBからそのリソースへの限定されたアクセスを可能にするときのプロトコルの動作はどれか。 
+<selection option='ア'> WebサービスAが,アクセストークンを発行する。 </selection>
+<selection option='イ'> WebサービスAが,利用者のディジタル証明書をWebサービスBに送信する。 </selection>
+<selection option='ウ'> ーWebサービスBが,アクセストークンを発行する。 </selection>
+<selection option='エ'> WebサービスBが,利用者のディジタル証明書をWebサービスAに送信する。 </selection>
+
+</question>
+
+<question num='15'> 問15インターネットサービスプロバイダ(ISP)が,OP25Bを導入する目的はどれか。 
+<selection option='ア'> ISP管理外のネットワークに対するISP管理下のネットワークからのICMPパケットによるDDoS攻撃を遮断する。 </selection>
+<selection option='イ'> ISP管理外のネットワークに向けてISP管理下のネットワークから送信されるスパムメールを制限する。 </selection>
+<selection option='ウ'> ISP管理下のネットワークに対するISP管理外のネットワークからのICMPパケットによるDDoS攻撃を遮断する。 </selection>
+<selection option='エ'> ISP管理下のネットワークに向けてISP管理外のネットワークから送信されるスパムメールを制限する。 </selection>
+
+</question>
+
+<question num='16'> 問16サンドポックスの仕組みに関する記述のうち,適切なものはどれか。 
+<selection option='ア'> Webアプリケーションの監弱性を悪用する攻撃に含まれる可能性が高い文字列を定義し,攻撃であると判定した場合には,その通信を遮断する。 </selection>
+<selection option='イ'> クラウド上で動作する複数の仮想マシン(ゲスト0S)間で,お互いの操作ができるように制御する。 </selection>
+<selection option='ウ'> プログラムの影響がシステム全体に及ばないように,プログラムが実行できる機能やアクセスできるリソースを制限して動作させる。 </selection>
+<selection option='エ'> プログラムのソースコードでSQL文の欝形の中に変数の場所を示す記号を置いた後,実際の値を割り当てる。 </selection>
+
+</question>
+
+<question num='17'> 問17利用者認証情報を管理するサーバ1台と複数のアクセスポイントで構成された無線LAN環境を実現したい。PCが無線LAN環境に接続するときの利用者認証とアクセス制御に,IEEE802.1XとRADIUSを利用する場合の標準的な方法はどれか。 
+<selection option='ア'> PCにはIEEE802.1Xのサプリカントを実装し,かつ,RADIUSクライアントの機能をもたせる。 </selection>
+<selection option='イ'> アクセスポイントにはIEEE802.1Xのオーセンティケータを実装し,かつ,RADIUSクライアントの機能をもたせる。 </selection>
+<selection option='ウ'> アクセスポイントにはIEEE802.1Xのサプリカントを実装し,かつ,RADIUSサーバの機能をもたせる。 </selection>
+<selection option='エ'> サーバにはIEEE802.1Xのオーセンティケータを実装し,かつ,RADIUSサーパの機能をもたせる。 </selection>
+
+</question>
+
+<question num='18'> 問18ICMPFlood攻撃に該当するものはどれか。 
+<selection option='ア'> HTTPGETコマンドを繰り返し送ることによって,攻撃対象のサーバにコンテンツ送信の負荷を掛ける。 </selection>
+<selection option='イ'> pingコマンドを用いて大量の要求パケットを発信することによって,攻撃対象のサーバに至るまでの回線を過負荷にしてアクセスを妨害する。 </selection>
+<selection option='ウ'> コネクション開始要求に当たるSYNパケットを大量に送ることによって,攻撃対象のサーバに,接続要求ごとに応答を返すための過大な負荷を掛ける。 </selection>
+<selection option='エ'> 大量のTCPコネクションを確立することによって,攻撃対象のサーバに接続を維持させ続けてりリソースを枯渇させる。 </selection>
+
+</question>
+
+<question num='19'> 問19PCやスイッチングハブがもつイーサネットインタフェース(物理ポート)の,Automatic MDIMDI-Xの機能はどれか。 
+<selection option='ア'> コネクタの送信端子と受信端子が正しい組合せとなるように,自動で判別して切り替える機能 </selection>
+<selection option='イ'> 接続した機器のアドレスを学習し,イーサネットフレームを該当するインタフエースにだけ転送する機能 </selection>
+<selection option='ウ'> 通信経路のループを自動的に検出する機能 </selection>
+<selection option='エ'> 通信速度や,全二重と半二重のデータ通信モードを自動的に設定する機能 </selection>
+
+</question>
+
+<question num='20'> 問20IEEE802.11a/g/nで採用されているアクセス制御方式はどれか。 
+<selection option='ア'> CSMACA </selection>
+<selection option='イ'> CSMACD </selection>
+<selection option='ウ'> LAPB </selection>
+<selection option='エ'> トークンパッシング方式 </selection>
+
+</question>
+
+<question num='21'> 問21次のSQL文をA表の所有者が発行した場合を説明したものはどれか。 
+GRANT ALL PRIVILEGES ON A T0 B WITH GRANT OPTION
+
+<selection option='ア'> 利用者Bに対して,A表に関するSELECT権限,UPDATE権限,INSERT権限,DELETE権限などの全ての権限,及びそれらの付与権を付与する。 </selection>
+<selection option='イ'> 利用者Bに対して,A表に関するSELECT権限,UPDATE権限,ITNSERT権限,DELETE権限などの全ての権限を付与するが,それらの付与権は付与しない。 </selection>
+<selection option='ウ'> 利用者Bに対して,A表に関するSELECT権限,UPDATE権限,INSERT権限,DELETE権限は付与しないが,それらの全ての付与権だけを付与する。 </selection>
+<selection option='エ'> 利用者Bに対して,A表に関するSELECT権限,及びSELECT権限の付与権を付与するが,UPDATE権限,TNSERT権限,DELETE権限,及びそれらの付与権は付与しない。 </selection>
+
+</question>
+
+<question num='22'> 問22システム及びソフトウェア品質モデルの規格であるJISX25010:2013で定義されたシステム及び/又はソフトウェア製品の品質特性に関する説明のうち,適切なものはどれか。 
+<selection option='ア'> 機能適合性とは,明示された状況下で使用するとき,明示的ニーズ及び暗黙のニーズを港足させる機能を,製品又はシステムが提供する度合いのことである。 </selection>
+<selection option='イ'> 信頼性とは,明記された状態(条件)で使用する資源の量に関係する性能の度合いのことである。 </selection>
+<selection option='ウ'> 性能効率性とは,明示された利用状況において,有効性,効率性及び漂足性をもって明示された目標を達成するために,明示された利用者が製品又はシステムを利用することができる序合いのことである。 </selection>
+<selection option='エ'> 保守性とは,明示された時間帯で,明示された条件下に,システム,製品又は構成要素が明示された機能を実行する度合いのことである。 </selection>
+
+</question>
+
+<question num='23'> 問23コンテンツの不正な複製を防止する方式のーつであるDTCFP-IPの説明として,適切なものはどれか。 
+<selection option='ア'> BSデジタル放送や地上デジタル放送に採用され,コピーワンスの番組を録画するときに使われる方式 </selection>
+<selection option='イ'> DLNAとともに用いられ,接続する機器間で相互認証し,コンテンツ保護が行えると認識して初めて録画再生を可能にする方式 </selection>
+<selection option='ウ'> DVDに採用され,映像コンテンツを暗号化して,複製できないエリアにその暗号化鍵を記録する方式 </selection>
+<selection option='エ'> HDMI端子が搭載されたディジタルAV機器に採用され,HDMI端子から表示機器にディジタル信号を送るときに受信する経路を暗号化する方式 </selection>
+
+</question>
+
+<question num='24'> 問24データの追加・変更・削除が,少ないながらも一定の頻度で行われるデータベースがある。このデータベースのフルバックアップを磁気テープに取得する時間間隔を今までの2倍にした。このとき,データベースのバックアップ又は復旧に関する記述のうち,適切なものはどれか。 
+<selection option='ア'> フルバックアップ1回当たりの磁気テープ使用量が約2倍になる。 </selection>
+<selection option='イ'> フルバックアップ1回当たりの磁気テープ使用量が約半分になる。 </selection>
+<selection option='ウ'> フルバックアップ取得の平均処理時間が約2倍になる。 </selection>
+<selection option='エ'> ログ情報を用いて復旧するときの平均処理時間が約2倍になる。 </selection>
+
+</question>
+
+<question num='25'> 問25ある企業が,自社が提供するWebサービスの信頼性について,外部監査人による保証を受ける場合において,次の表のA 
+[img2]
+<selection option='ア'> A </selection>
+<selection option='イ'> B </selection>
+<selection option='ウ'> C </selection>
+<selection option='エ'> D </selection>
+</question>

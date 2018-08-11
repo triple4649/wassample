@@ -1,13 +1,16 @@
 package jpn;
 
 import java.io.File;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.atilika.kuromoji.Tokenizer;
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JapaneseAnalyser {
 	private static final String FILE_NAME="2017h29h_sc_am2_qs.pdf.xml";
@@ -17,33 +20,29 @@ public class JapaneseAnalyser {
     }	
     
     public static String getResult() throws Exception{
-    	return parseXML(String.format("pdf/xml/%s", FILE_NAME))
-    	.stream()
-    	.reduce("",
-    			(s,s1)->s+s1+System.lineSeparator(),
-    			(s,s1)->s);
+    	ObjectMapper mapper = new ObjectMapper();
+    	return mapper.writeValueAsString(parseXML(String.format("pdf/xml/%s", FILE_NAME)));
     }
     
     //JSoupを使ってxmlを解析する
-	public static List<String> parseXML(String str){
+	public static Map<String,List<String>> parseXML(String str){
 		try{
 			return Jsoup.parse(new File(str),"UTF-8")
 					//タグ questionに属する子要素をすべて取得する
 					.getElementsByTag("question") 
 					.stream()
-					.map(s->s.attr("num")+":"
-							+transform(s.text()
-							+" "
-							+concatQuestionStrs(s.getElementsByTag("selection"))))
-					.collect(Collectors.toList());
+					.collect(Collectors.toMap(
+ 								e->e.attr("num"),	
+ 								e->transform(e.text()+concatQuestionStrs(e.getElementsByTag("selection"))))
+							);
 		}catch(Exception e){
 			e.printStackTrace();
-			return new ArrayList<String>();
+			return new HashMap<String,List<String>>();
 		}
     }
 	
 	//引数で渡された文字例に対して名詞を抽出する
-	public static String transform(String s){
+	public static List<String> transform(String s){
     	return Tokenizer.builder()
         	    .build()
         	    .tokenize(s)
@@ -51,8 +50,7 @@ public class JapaneseAnalyser {
         	    .filter(a ->countOut(a.getPartOfSpeech()))
         	    .map(e -> e.getSurfaceForm())
         	    .filter(JapaneseAnalyser::myFilter)
-        	    .reduce((v1,v2)->v1+"|"+v2)
-        	    .orElse("");
+        	    .collect(Collectors.toList());
     }
     
     //選択肢に含まれているテキストを連結する

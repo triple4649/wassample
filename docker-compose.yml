@@ -4,3 +4,9 @@ services:
     build: .
     ports:
      - "80:9080"
+    networks:
+     - dns
+     
+networks:
+    dns:
+        external: true

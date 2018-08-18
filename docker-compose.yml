@@ -4,8 +4,28 @@ services:
     build: .
     ports:
      - "80:9080"
+    depends_on:
+     - postgresql
     networks:
      - dns
+
+  postgres-data:
+    image: busybox
+    volumes:
+        - /var/lib/postgresql/data
+    container_name: postgres-java-datastore
+
+  postgresql:
+    image: postgres
+    environment:
+      POSTGRES_USER: triple
+      POSTGRES_PASSWORD: triple4649
+    ports:
+      - "5431:5432"
+    container_name: postgres-triple-db
+    volumes_from:
+        - postgres-data
+
      
 networks:
     dns:

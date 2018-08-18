@@ -12,11 +12,10 @@ dependencies {
     testRuntime('org.junit.jupiter:junit-jupiter-engine:5.2.0')
     compile 'com.fasterxml.jackson.core:jackson-databind:2.3.4'
     compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.4'
+    compile group: 'org.eclipse.persistence', name: 'eclipselink', version: '2.5.1'
     compile group: 'org.jsoup', name: 'jsoup', version: '1.9.1'
     compile files('lib/kuromoji-0.7.7.jar')
-    
-    // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
-    compile group: 'org.eclipse.persistence', name: 'eclipselink', version: '2.7.2'
 }
 
 test {
